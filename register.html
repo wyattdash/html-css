@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Schedule - Brand Salon</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="favicon.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <a href="#main-content" id="skip-link">Skip to main content</a>
+      <header role="banner">
+        <div>
+          <h1>Brand Salon</h1>
+          <img src="images/head-1.png" alt="The Brand logo." width="243" height="143">
+        </div>
+        <nav role="navigation">
+          <label for="nav-box" id="nav-trigger">Menu</label>
+          <input id="nav-box" type="checkbox">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="register.html">Schedule</a></li>
+          </ul>
+        </nav>
+    </header>
+      <main role="main" id="main-content" tabindex="-1">
+        <form action="unit-3-form-handler.html" method="get" role="form">
+          <p><small>All items with * are required</small></p>
+          <fieldset>
+            <legend>Contact Info</legend>
+            <label for="fName">*First Name:</label>
+            <input type="text" id="fName" name="First Name" required><br>
+
+            <label for="lname">*Last Name:</label>
+            <input type="text" id="lname" name="Last Name" required><br>
+
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="Email" required><br>
+
+            <label for="phone">*Phone:</label>
+            <input type="tel" id="phone" name="Phone" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>*Cut:</legend>
+            <input type="radio" id="mCut" name="cut" value="Male" required>
+            <label for="mCut">Male</label>
+            <input type="radio" id="fCut" name="cut" value="Female">
+            <label for="fCut">Female</label>
+            <input type="radio" id="kCut" name="cut" value="Child">
+            <label for="kCut">Child</label>
+            <input type="radio" id="nCut" name="cut" value="N/A">
+            <label for="nCut">N/A</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>*Color:</legend>
+            <input type="radio" id="mColor" name="color" value="Male" required>
+            <label for="mColor">Male</label>
+            <input type="radio" id="fColor" name="color" value="Female">
+            <label for="fColor">Female</label>
+            <input type="radio" id="kColor" name="color" value="Child">
+            <label for="kColor">Child</label>
+            <input type="radio" id="nColor" name="color" value="N/A">
+            <label for="nColor">N/A</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>*Style:</legend>
+            <input type="radio" id="mStyle" name="style" value="Male" required>
+            <label for="mStyle">Male</label>
+            <input type="radio" id="fStyle" name="style" value="Female">
+            <label for="fStyle">Female</label>
+            <input type="radio" id="kStyle" name="style" value="Child">
+            <label for="kStyle">Child</label>
+            <input type="radio" id="nStyle" name="style" value="N/A">
+            <label for="nStyle">N/A</label>
+          </fieldset>
+
+          <input type="checkbox" id="newsletter" name="newsletter" value="sign up for newsletter">
+          <label for="newsletter">Sign up for newsletter</label><br>
+
+          <input type="submit" value="Schedule">
+        </form>
+      </main>
+      <footer role="contentinfo">
+        <p>All material &#64; Brand Salon <sup>&copy;</sup></p>
+      </footer>
+    </div>
+    <div id="logo"></div>
+  </body>
+</html>
